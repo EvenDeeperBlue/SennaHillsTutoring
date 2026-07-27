@@ -345,7 +345,16 @@
         </div>
         <div>
           <label for="time">Preferred time</label>
-          <input id="time" name="time" type="time" step="3600" min="15:00" max="20:00" required />
+          <input id="time" name="time" type="time" step="3600" min="15:00" max="20:00" list="interval-steps" required />
+          <datalist id="interval-steps">
+            <option value="15:00">
+            <option value="16:00">
+            <option value="17:00">
+            <option value="18:00">
+            <option value="19:00">
+            <option value="20:00">
+            <!-- Add additional intervals as needed -->
+          </datalist>
         </div>
         <div class="full">
           <label for="notes">Anything I should know? (optional)</label>
